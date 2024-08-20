@@ -11,7 +11,7 @@ services:
   db:
     image: mysql:8.0.30-debian
     environment:
-      - MYSQL_ROOT_PASSWORD: root
-      - MYSQL_DATABASE: nest-api
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: nest-api
 
 # mysql://root:root@db:3306/nest-api
