@@ -8,10 +8,30 @@ services:
     volumes:
       - .:/home/node/app
   
-  db:
-    image: mysql:8.0.30-debian
-    environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: nest-api
+  # db:
+  #   image: mysql:8.0.30-debian
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: root
+  #     MYSQL_DATABASE: database
+  
+  # db:
+  #   image: postgres
+  #   environment:
+  #     POSTGRES_PASSWORD: root
+  #     POSTGRES_DB: database
+  #     POSTGRES_USER: root
+  #   volumes:
+  #     - postgres-data:/var/lib/postgresql/data
+  
+  # adminer:
+  #   image: adminer
+  #   ports:
+  #     - 8080:8080
 
-# mysql://root:root@db:3306/nest-api
+  # redis:
+  #   image: redis:6
+  #   ports:
+  #     - 6379:6379
+
+# volumes:
+#   postgres-data:
